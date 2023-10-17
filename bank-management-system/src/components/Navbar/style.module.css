@@ -1,0 +1,101 @@
+/* header golbal styles */
+
+header a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.2s ease;
+}
+header a:hover{
+    color: yellow;
+    cursor: pointer;
+}
+/* header */
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: #444971;
+    backdrop-filter: blur(10px);
+    position: fixed;
+    /* overflow: hidden; */
+    top: 0;
+    width: 100%;
+    z-index: 99;
+}
+.navbar{
+    width: 100%;
+    height: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.log a{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.links{
+    display: flex;
+    gap: 2rem;
+}
+.auth{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+}
+/* .login{
+
+} */
+.register{
+    padding: 0.4rem 1rem;
+    background-color: blue;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.register:hover{
+    scale: 1.05;
+    color: #fff;
+}
+.register:active{
+    scale: 1;
+}
+.menuBtn{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.logout_btn{
+    outline: none;
+    border: none;
+    background: darkorange;
+    padding: 3px 10px;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 500;
+    align-items: center;
+}
+/* responsive design */
+@media(max-width:768px){
+    header{
+        background-color: lightblue;
+        backdrop-filter: none;
+    }
+    .links
+     /* .auth */
+     {
+        display: none;
+    }
+    .menuBtn{
+        display: block;
+    }
+}
+@media (max-width:540px){
+     .auth{
+        display: none;
+    }
+}

@@ -1,0 +1,261 @@
+.deposite_container {
+  margin-top: 5rem;
+  padding: 0 15rem;
+}
+.deposite_page {
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: #5553FF; */
+  /* background-image: linear-gradient(to right, #b6fbff, #83a4d4); */
+  /* background-image: linear-gradient(to right, #2c3e50, #4ca1af); */
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(156, 252, 248, 1) 11.2%,
+    rgba(110, 123, 251, 1) 91.1%
+  );
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 5px;
+}
+.acc_details {
+  color: black;
+}
+.acc_details .acc_details_span {
+  font-weight: 600;
+  color: blue;
+}
+.acc_details span {
+  font-weight: 600;
+}
+.tot_amount {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* form properties */
+.dp_form {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 0 16rem;
+}
+.login_container {
+  height: 100%;
+  /* background: #78a7ba; */
+  /* background: #d2f2ff; */
+  margin-top: 5rem;
+  /* text-align: center; */
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signup_form {
+  flex: 1;
+  max-width: 350px;
+  background-color: #eff0f1;
+  border-radius: 10px;
+  border: 1px solid #999;
+  margin-top: 1rem;
+}
+.form_header {
+  padding: 15px 0;
+  border-bottom: 1px solid #cccccc;
+}
+.form_header h1 {
+  font-size: 28px;
+  text-align: center;
+  color: black;
+}
+.input_group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 5px;
+}
+label {
+  color: #1bba93;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="number"] {
+  font-size: 18px;
+  height: 34px;
+  padding: 0 10px;
+  color: #666;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+}
+.form_body {
+  background: white;
+  padding: 5px 10px;
+}
+
+.form_footer {
+  display: flex;
+  justify-content: center;
+}
+.submit_btn {
+  margin: 10px;
+  padding: 5px 20px;
+  background-color: #36802d;
+  /* background-color: #ffc107; */
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .deposite_container {
+    padding: 0 1rem;
+  }
+  .deposite_page {
+    font-size: 12px;
+  }
+  .dp_form {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 6rem;
+  }
+  .form_header h1 {
+    font-size: 16px;
+  }
+  label {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  input[type="text"],
+  input[type="number"] {
+    font-size: 12px;
+  }
+  .submit_btn {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 619px) {
+  .deposite_container {
+    margin-top: 5rem;
+    padding: 0 3rem;
+  }
+  .deposite_page {
+    font-size: 14px;
+  }
+  .dp_form {
+    margin-top: 2rem;
+    text-align: center;
+    padding: 0 6rem;
+  }
+  .form_header h1 {
+    font-size: 20px;
+  }
+  label {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .submit_btn {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 620px) and (max-width: 767px) {
+  .deposite_container {
+    margin-top: 5rem;
+    padding: 0 5rem;
+  }
+  .deposite_page {
+    font-size: 16px;
+  }
+  .dp_form {
+    margin-top: 2rem;
+    padding: 0 8rem;
+  }
+  .form_header h1 {
+    font-size: 22px;
+  }
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .submit_btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+  .deposite_container {
+    margin-top: 5rem;
+    padding: 0 7rem;
+  }
+  .deposite_page {
+    font-size: 20px;
+  }
+  .dp_form {
+    margin-top: 2rem;
+    padding: 0 10rem;
+  }
+  .form_header h1 {
+    font-size: 25px;
+  }
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .submit_btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 901px) and (max-width: 1024px) {
+  .deposite_container {
+    margin-top: 5rem;
+    padding: 0 7rem;
+  }
+  .deposite_page {
+    font-size: 20px;
+  }
+  .dp_form {
+    margin-top: 2rem;
+    padding: 0 14rem;
+  }
+  .form_header h1 {
+    font-size: 25px;
+  }
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .submit_btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1280px) {
+  .deposite_container {
+    margin-top: 5rem;
+    padding: 0 7rem;
+  }
+  .deposite_page {
+    font-size: 20px;
+  }
+  .dp_form {
+    margin-top: 2rem;
+    padding: 0 16rem;
+  }
+  .form_header h1 {
+    font-size: 25px;
+  }
+  label {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  .submit_btn {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: 1281px) {
+}
