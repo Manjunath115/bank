@@ -79,6 +79,19 @@ header{
     font-weight: 500;
     align-items: center;
 }
+.userId{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: greenyellow;
+    cursor: not-allowed;
+    font-size: 14px;
+    font-weight: 500;
+}
+.userId:hover{
+    color: greenyellow;
+    cursor: not-allowed;
+}
 /* responsive design */
 @media(max-width:768px){
     header{
