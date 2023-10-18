@@ -10,8 +10,9 @@ const Deposite = () => {
   const [viewBalance, setViewBalance] = useState();
 
   const dispatch = useDispatch();
-  const detailsOfUser = useSelector((state) => state.auth.user);
-  
+  const detailsOfUser = useSelector((state) => state.auth.users);
+  const username=detailsOfUser.map((user)=>user.firstname);
+  const accountType=detailsOfUser.map((user)=>user.ac_type);
   const intBalance = useSelector((state) => state.account.balance);
 
   const handleAmountChange = (e) => {
@@ -47,8 +48,8 @@ const Deposite = () => {
     <div className={st.deposite_container}>
       <div className={st.deposite_page}>
         <div className={st.acc_details}>
-          <p>Username: <span className={st.acc_details_span}>{detailsOfUser.firstname}</span></p>
-          <p>Account Type: <span className={st.acc_details_span}>{detailsOfUser.ac_type}</span> </p>
+          <p>Username: <span className={st.acc_details_span}>{username}</span></p>
+          <p>Account Type: <span className={st.acc_details_span}>{accountType}</span> </p>
         </div>
         <div className={st.tot_amount}>
           <p>Available Balance: Rs. {intBalance}/-</p>

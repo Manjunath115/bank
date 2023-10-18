@@ -5,6 +5,7 @@ import { IoMenuOutline as MenuIcon } from "react-icons/io5";
 import Sidebar from "../Sidebar/Sidebar";
 import { useDispatch, useSelector } from "react-redux";
 import { logoutAction } from "../../store/actions/AuthActions";
+import { IoPerson as IdIcon } from "react-icons/io5";
 
 const Navbar = () => {
   const [openSidebar, setOpenSidebar] = useState(false);
@@ -14,8 +15,10 @@ const Navbar = () => {
   
   const authenticated = useSelector((state) => state.auth.isAuthenticated);
  const dispatch=useDispatch();
-const getUserName=useSelector((state)=> state.auth.user);
-// console.log(getUserName.email);
+const getUserName=useSelector((state)=> state.auth.users);
+console.log(getUserName.length);
+const firstName=getUserName.map((user)=> user.firstname);
+const lastName=getUserName.map((user)=> user.lastname);
   useEffect(() => {
     // console.log(authenticated);
     setIsAuthenticated(authenticated);
@@ -72,7 +75,8 @@ const getUserName=useSelector((state)=> state.auth.user);
             <NavLink to="/deposite" style={linkStyle}>
               Deposite
             </NavLink>
-            {/* <p>{getUserName.email}</p> */}
+            <NavLink className={st.userId}><IdIcon /> &nbsp; {firstName}, {lastName}</NavLink>
+            <p></p>
             <button type="submit" className={st.logout_btn} onClick={()=>logoutClicked()}>Logout</button>
           </div>
         )}
