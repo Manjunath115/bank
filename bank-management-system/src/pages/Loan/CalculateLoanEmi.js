@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import st from "./style.module.css";
 import { FaRupeeSign } from "react-icons/fa";
+import Button from "../../components/ButtonComp/Button";
 
 const CalculateLoanEmi = () => {
   const [principal, setPrincipal] = useState(0);
@@ -93,7 +94,8 @@ const CalculateLoanEmi = () => {
                 <FaRupeeSign />{totalLoanAmount}
               </div>
             </div>
-            <button className={st.cal_btn} onClick={calculateEmi}>Calculate</button>
+            {/* <button className={st.cal_btn} onClick={calculateEmi}>Calculate</button> */}
+            <Button text="Calculate" className={st.cal_btn} clickOnButton={calculateEmi} />
           </div>
         </div>
       </div>

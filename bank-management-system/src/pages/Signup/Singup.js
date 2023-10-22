@@ -8,6 +8,7 @@ import SweetAlert from "../../services/SweetAlert";
 import { NavLink, useNavigate } from "react-router-dom";
 import { initialDeposite } from "../../store/actions/AccountActions";
 import Swal from "sweetalert2";
+import Button from "../../components/ButtonComp/Button";
 
 const Singup = () => {
   const [formData, setFormData] = useState({
@@ -321,7 +322,8 @@ const Singup = () => {
           </div>
         </div>
         <div className={st.form_footer}>
-          <button className={st.submit_btn}>Submit</button>
+          {/* <button className={st.submit_btn}>Submit</button> */}
+          <Button text="Submit" className={st.submit_btn} />
         </div>
         <div className={st.not}>
           Already have an account?{" "}
@@ -338,82 +340,3 @@ const Singup = () => {
 };
 
 export default Singup;
-
-// import React, { useState } from "react";
-// import { connect, useDispatch } from "react-redux";
-// import st from "./style.module.css";
-// import { signupAction } from "../../store/actions/AuthActions";
-
-// const Singup = () => {
-//   const [formdata, setFormdata] = useState({
-//     firstname:'',
-//     lastname:"",
-//     email: "",
-//     password: "",
-//     address:'',
-//     country:'',
-//     countryId:'',
-//     states:[],
-//     state_name:'',
-//     phone: "",
-//     dob: "",
-//     ac_type: "",
-//     branch_name: "",
-//     int_deposite: "",
-//     id_proof_type: "",
-//     id_proof_num: "",
-//   });
-//   const [states,setStates]=useState([]);
-//   const [formErrors, setFormErrors] = useState({});
-
-//   const handleInputChange = (e) => {
-//     setFormdata({ ...formdata, [e.target.name]: e.target.value });
-//   };
-
-//   console.log(formdata);
-//   const dispatch = useDispatch();
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-
-//     dispatch(signupAction(formdata));
-//   };
-//   return (
-//     <div className={st.signup_container}>
-//       <form onSubmit={handleSubmit}>
-//         <input
-//           type="text"
-//           name="username"
-//           value={formdata.username}
-//           placeholder="username"
-//           onChange={handleInputChange}
-//         />
-//         <br />
-//         <br />
-//         <input
-//           type="email"
-//           name="email"
-//           value={formdata.email}
-//           placeholder="enter email"
-//           onChange={handleInputChange}
-//         />
-//         <br />
-//         <br />
-//         <input
-//           type="password"
-//           name="password"
-//           value={formdata.password}
-//           placeholder="enter password"
-//           onChange={handleInputChange}
-//         />
-//         <br />
-//         <br />
-
-//         <button>Submit</button>
-//       </form>
-//     </div>
-
-//   );
-// };
-
-// export default Singup;

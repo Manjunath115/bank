@@ -49,13 +49,6 @@
 }
 .apply_btn {
   padding: 10px 50px;
-  background-color: #36802d;
-  font-size: 17px;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
 }
 .sub_navlinks {
   margin-top: 3rem;
@@ -126,14 +119,7 @@ select:disabled {
 .submit_btn {
   margin: 10px;
   padding: 5px 20px;
-  background-color: #36802d;
-  /* background-color: #ffc107; */
   font-size: 17px;
-  border: none;
-  border-radius: 5px;
-  color: #bcf5e7;
-  cursor: pointer;
-  font-weight: 600;
 }
 .field_error {
   font-size: 13px;
@@ -213,14 +199,7 @@ select:disabled {
   opacity: 0.4;
 }
 .loan_calculator .cal_btn {
-  background: #36802d;
-  color: #fff;
-  border: none;
   padding: 8px 32px;
-  border-radius: 8px;
-  font-size: 18px;
-  font-weight: 600;
-  cursor: pointer;
   margin: 24px 0;
 }
 @media only screen and (min-width: 320px) and (max-width: 480px) {

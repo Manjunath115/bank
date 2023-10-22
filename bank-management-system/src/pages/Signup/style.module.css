@@ -81,22 +81,13 @@ input[type="date"] {
 }
 .submit_btn {
   margin: 10px;
-  padding: 5px 20px;
-  background-color:#36802d;
   /* background-color: #ffc107; */
-  font-size: 17px;
-  border: none;
-  border-radius: 5px;
-  /* color: #bcf5e7; */
-  color: #fff;
-  cursor: pointer;
-  font-weight: 600;
 }
 .field_error {
   font-size: 13px;
   color: red;
 }
-.not {
+.not {  
   text-align: center;
   margin-bottom: 10px;
   font-size: 14px;

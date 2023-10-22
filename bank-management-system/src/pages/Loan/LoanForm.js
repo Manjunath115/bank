@@ -9,6 +9,7 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import SweetAlert from "../../services/SweetAlert";
 import { applyLoan } from "../../store/actions/LoanActions";
+import Button from "../../components/ButtonComp/Button";
 
 const LoanForm = () => {
   const [loanDetails, setLoanDetails] = useState({
@@ -421,9 +422,10 @@ const LoanForm = () => {
             )}
           </div>
           <div className={st.form_footer}>
-            <button type="submit" className={st.submit_btn}>
+            {/* <button type="submit" className={st.submit_btn}>
               Submit
-            </button>
+            </button> */}
+            <Button text="Submit" className={st.submit_btn} />
           </div>
         </form>
       )}

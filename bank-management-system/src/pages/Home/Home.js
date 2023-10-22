@@ -2,6 +2,7 @@ import React from "react";
 import st from "./style.module.css";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
+import Button from "../../components/ButtonComp/Button";
 
 function Home() {
 
@@ -20,8 +21,8 @@ function Home() {
           <p>Open an account today to unveil digital banking the world loves</p>
         </div>
 
-        <button className={st.started_btn} onClick={clickGetStarted}>Get Started</button>
-        
+        {/* <button className={st.started_btn} onClick={clickGetStarted}>Get Started</button> */}
+        <Button text="Get Started" clickOnButton={clickGetStarted} className={st.started_btn} />
       </div>
     </div>
   );

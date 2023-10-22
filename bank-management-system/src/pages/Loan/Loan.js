@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { NavLink, Outlet } from "react-router-dom";
 import { SweetAlert2 } from "../../services/SweetAlert";
 import Swal from "sweetalert2";
+import Button from "../../components/ButtonComp/Button";
 
 const Loan = () => {
   // const [loanStatus, setLoanStatus] = useState();
@@ -79,11 +80,13 @@ const Loan = () => {
         {/* <button className={st.apply_btn}>Apply For a Loan</button> */}
         <nav className={st.btn_nav_links}>
           <NavLink to="/loan/apply_loan">
-            <button className={st.apply_btn}>Apply For a Loan</button>
+            {/* <button className={st.apply_btn}>Apply For a Loan</button> */}
+            <Button text="Apply For a Loan" className={st.apply_btn} />
           </NavLink>
           &emsp;&emsp;&emsp;
           <NavLink to="/loan/calculate_loan">
-            <button className={st.apply_btn}>Calculate Loan EMI</button>
+            {/* <button className={st.apply_btn}>Calculate Loan EMI</button> */}
+            <Button text="Calculate Loan EMI" className={st.apply_btn} />
           </NavLink>
         </nav>
         {/* {loanStatus === true ? (

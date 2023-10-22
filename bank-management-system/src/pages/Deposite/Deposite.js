@@ -3,6 +3,7 @@ import st from "./style.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { depositeFormValidation } from "../../services/FormValidations";
 import { depositeAmount } from "../../store/actions/AccountActions";
+import Button from "../../components/ButtonComp/Button";
 
 const Deposite = () => {
   const [newAmount, setNewAmount] = useState(0);
@@ -81,7 +82,8 @@ const Deposite = () => {
             </div>
           </div>
           <div className={st.form_footer}>
-            <button type="submit" className={st.submit_btn}>Submit</button>
+            {/* <button type="submit" className={st.submit_btn}>Submit</button> */}
+            <Button text="Submit" className={st.submit_btn} />
           </div>
         </form>
       </div>

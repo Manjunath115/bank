@@ -5,6 +5,7 @@ import { validation } from "../../services/FormValidations";
 import SweetAlert from "../../services/SweetAlert";
 import { useNavigate } from "react-router-dom";
 import { loginAction } from "../../store/actions/AuthActions";
+import Button from "../../components/ButtonComp/Button";
 
 function Signin() {
   const [loginDetails, setLoginDetails] = useState({
@@ -82,7 +83,8 @@ function Signin() {
           <p className={st.ft_pwd}>Forget password</p>
         </div>
         <div className={st.form_footer}>
-          <button className={st.submit_btn}>Submit</button>
+          {/* <button className={st.submit_btn}>Submit</button> */}
+          <Button text="Submit" className={st.submit_btn} />
         </div>
         <div className={st.not}>
           Not a member?{" "}
